@@ -34,7 +34,7 @@ h1 {
 }
 
 header {
-	background-image: url(images/melody-p-wFN9B3s_iik-unsplash2.jpg);
+	background-image: url(images/melody-p-wFN9B3s_iik-unsplash2.webp);
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -487,7 +487,7 @@ form input {
 }
 #message {
 	padding: 20px;
-	font-family: inherit;
+	/* font-family: inherit; */
 	grid-area: Message;
 	font-size: 1.5rem;
 	border-radius: 7px;
