@@ -475,6 +475,7 @@ form input {
 	font-size: 1.5rem;
 	border-radius: 7px;
 	padding: 20px;
+	font-family: inherit;
 }
 #full-name {
 	grid-area: Name;
@@ -487,7 +488,7 @@ form input {
 }
 #message {
 	padding: 20px;
-	/* font-family: inherit; */
+	font-family: inherit;
 	grid-area: Message;
 	font-size: 1.5rem;
 	border-radius: 7px;
