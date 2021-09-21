@@ -51,4 +51,3 @@ exports.handler = async function (event, context) {
 	}
 };
 
-// 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
