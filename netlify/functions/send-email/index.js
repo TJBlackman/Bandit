@@ -2,8 +2,8 @@ const sgMail = require("@sendgrid/mail");
 
 const a = [
 	"SG",
-	"Z0-iNQ3ASMapGlMgDf9pVA",
-	"fQBIfFGtdy4V7cv0UkmRkd2IG_67hnokieuAO20C-BY",
+	"j-m7yCWERpmGyOiWGesDCg",
+	"_9Oc1bMJf-gtINAQjrZrYBXrC-Kx68UN3WovknkjVZw",
 ];
 
 const API_KEY = a.join(".");
@@ -38,8 +38,8 @@ exports.handler = async function (event, context) {
         `;
 
 		const email = {
-			to: "schmidt217@gmail.com",
-			from: "info@banditsvc.com", // Use the email address or domain you verified above
+			to: "info@banditsvc.com",
+			from: "info@banditsvc.com",
 			subject: `New Contact Form: ${data.subject}`,
 			text: textMessage,
 			html: htmlMessage,
@@ -58,4 +58,4 @@ exports.handler = async function (event, context) {
 	}
 };
 
-//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;
+// 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

@@ -134,11 +134,11 @@ form.addEventListener("submit", (e) => {
 		.then((response) => response.json())
 		.then((obj) => {
 			console.log(obj);
-			formMessage();
+			alert("Message sent successfully!");
 		})
 		.then(() => {
 			submitBtn.innerHTML = "Submit";
-			// form.reset();
+			form.reset();
 		})
 		.catch((err) => {
 			console.log(err);
