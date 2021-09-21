@@ -1,6 +1,12 @@
 const sgMail = require("@sendgrid/mail");
 
-const API_KEY = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
+const a = [
+	"SG",
+	"Z0-iNQ3ASMapGlMgDf9pVA",
+	"fQBIfFGtdy4V7cv0UkmRkd2IG_67hnokieuAO20C-BY",
+];
+
+const API_KEY = a.join(".");
 
 sgMail.setApiKey(API_KEY);
 
@@ -52,4 +58,4 @@ exports.handler = async function (event, context) {
 	}
 };
 
-//SG.Z0 - iNQ3ASMapGlMgDf9pVA.fQBIfFGtdy4V7cv0UkmRkd2IG_67hnokieuAO20C - BY;
+//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;
