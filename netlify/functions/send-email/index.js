@@ -1,13 +1,5 @@
 const sgMail = require("@sendgrid/mail");
 
-const a = [
-	"SG",
-	"j-m7yCWERpmGyOiWGesDCg",
-	"_9Oc1bMJf-gtINAQjrZrYBXrC-Kx68UN3WovknkjVZw",
-];
-
-const API_KEY = a.join(".");
-
 sgMail.setApiKey(API_KEY);
 
 exports.handler = async function (event, context) {
@@ -57,5 +49,3 @@ exports.handler = async function (event, context) {
 		};
 	}
 };
-
-// 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
