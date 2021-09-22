@@ -3,6 +3,8 @@ require("dotenv").config();
 
 const api_key = process.env.API_KEY;
 
+console.log(process.env);
+
 sgMail.setApiKey(api_key);
 
 exports.handler = async function (event, context) {
