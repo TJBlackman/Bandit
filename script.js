@@ -149,5 +149,3 @@ form.addEventListener("submit", (e) => {
 //-----------------Copyright Year in Footer--------------
 
 year.innerText = new Date().getFullYear();
-
-// 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
