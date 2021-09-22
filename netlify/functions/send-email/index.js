@@ -49,7 +49,7 @@ exports.handler = async function (event, context) {
 			body: JSON.stringify({ success: true }),
 		};
 	} catch (error) {
-		alert(error);
+		console.log(error);
 		return {
 			body: JSON.stringify({ success: false, message: error }),
 		};
