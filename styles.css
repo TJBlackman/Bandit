@@ -4,6 +4,7 @@
 	--primary-color: #010025;
 	--secondary-color: #cbaa1a;
 	--secondary-color-darker: #c8981a;
+	--secondary-color-lighter: #ffe600;
 	--search-bar: #47474a;
 	--dark-background: #222222;
 	--light-background: #fff;
@@ -349,12 +350,11 @@ h1 {
 }
 
 .benefits-tab:hover {
-	background-color: var(--secondary-color-darker);
+	background-color: var(--secondary-color-lighter);
 }
 
 .benefits-tab-active {
-	background-color: var(--secondary-color-darker);
-	transform: translateY(-70%);
+	background-color: var(--secondary-color-lighter);
 }
 
 .benefits-content {
