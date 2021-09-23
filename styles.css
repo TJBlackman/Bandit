@@ -505,7 +505,7 @@ form input {
 }
 #form-submit:hover {
 	transform: scale(1.02);
-	background-color: var(--secondary-color-darker);
+	background-color: var(--secondary-color-lighter);
 }
 #form-submit:focus {
 	outline: none;
