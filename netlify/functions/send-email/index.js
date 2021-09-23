@@ -29,7 +29,7 @@ exports.handler = async function (event, context) {
         `;
 
 		const htmlMessage = `
-            <p>A new form was submitted by ${data.email}.</p>
+            <p>A new form was submitted from ${data.name} via ${data.email}.</p>
             <p> Message: <br/> ${data.message}</p>
         `;
 
