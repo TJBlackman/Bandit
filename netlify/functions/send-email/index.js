@@ -24,12 +24,14 @@ exports.handler = async function (event, context) {
 		}
 
 		const textMessage = `
-        A new form was submitted by ${data.email}.
+		A new form was submitted by ${data.name} via ${data.email}.
+		Contact number: ${data.phone}
         Message: ${data.message}
         `;
 
 		const htmlMessage = `
-            <p>A new form was submitted from ${data.name} via ${data.email}.</p>
+			<p> A new form was submitted from ${data.name} via ${data.email}.</p>
+			<p> Contact number: ${data.phone} </p>
             <p> Message: <br/> ${data.message}</p>
         `;
 

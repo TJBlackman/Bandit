@@ -243,14 +243,18 @@
 						<div class="contact-column">
 							<form id="contact-form">
 
-								<input type="text" class = 'input-search name' name="name" id="full-name" placeholder="Name"><br>
+								<input type="text" class='input-search name' name="name" id="full-name" placeholder="Name">
+								
+								<input type="email" class='input-search email' name="email" id="email-address" placeholder="Email">
+								
+								<input type="text" class='input-search subject' placeholder="Subject" id = 'subject'>
 
-								<input type="email" class = 'input-search email' name="email" id="email-address" placeholder="Email"><br>
+								<input type="tel" class='input-search phone' name="phone" id="phone" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
 
-								<input type="text" class = 'input-search subject' placeholder="Subject" id = 'subject'><br>
 
-								<textarea name="message" id="message" class = 'input-search' cols="30" rows="10" placeholder="Message"></textarea>
+								<textarea name="message" id="message" class='input-search' cols="30" rows="10" placeholder="Message"></textarea>
 								<button id = 'form-submit'>Submit</button>
+								
 							</form>
 						</div>
 						<div class="contact-column-2">

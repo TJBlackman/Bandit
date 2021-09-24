@@ -98,9 +98,9 @@ nav ul {
 }
 
 nav.active {
-	width: 200px;
+	width: 170px;
 	height: 100vh;
-	background-color: #0f1b2f;
+	background-color: var(--search-bar);
 	opacity: 1;
 	transition: 0.5s ease-in-out;
 	overflow-y: auto;
@@ -464,9 +464,9 @@ hr {
 form {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-areas: "Name Name" "Email Subject" "Message Message" "submit submit";
-	column-gap: 30px;
-	row-gap: 30px;
+	grid-template-areas: "Name Email" "Subject Phone" "Message Message" "submit submit";
+	column-gap: 20px;
+	row-gap: 20px;
 	margin: 0 auto;
 	padding-left: 10%;
 }
@@ -480,12 +480,17 @@ form input {
 #full-name {
 	grid-area: Name;
 }
+#phone {
+	grid-area: Phone;
+}
+
 #email-address {
 	grid-area: Email;
 }
 #subject {
 	grid-area: Subject;
 }
+
 #message {
 	padding: 20px;
 	font-family: inherit;
@@ -811,10 +816,6 @@ footer a {
 		font-size: 1rem;
 	}
 
-	/* .technician-benefits {
-		margin: 0;
-	} */
-
 	/* CONTACT */
 	#contact p {
 		margin: 0 20px;
@@ -831,10 +832,9 @@ footer a {
 	form {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-areas: "Name Name" "Email Email" "Subject Subject" "Message Message" "submit submit";
-		column-gap: 30px;
+		grid-template-areas: "Name Name" "Email Email" "Subject Subject" "Phone Phone" "Message Message" "submit submit";
+		column-gap: 20px;
 		row-gap: 10px;
-		/* margin: 0 auto; */
 	}
 
 	form input {

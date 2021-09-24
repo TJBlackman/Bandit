@@ -114,12 +114,14 @@ form.addEventListener("submit", (e) => {
 	`;
 	let _name = form.querySelector(".name").value;
 	let _email = form.querySelector(".email").value;
+	let _phone = form.querySelector(".phone").value;
 	let _subject = form.querySelector(".subject").value;
 	let _message = form.querySelector("#message").value;
 
 	const data = {
 		name: _name,
 		email: _email,
+		phone: _phone,
 		subject: _subject,
 		message: _message,
 	};
