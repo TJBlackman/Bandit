@@ -1,17 +1,14 @@
-"use strict";
-
 const navBar = document.querySelector("nav");
 const navBtn = document.querySelector(".closeBtn");
 const navItems = document.querySelector(".nav-items");
-const navLinks = document.querySelectorAll(".nav-link");
-const learnMoreBtn = document.querySelector(".learn-more");
-const aboutSection = document.getElementById("about");
 const year = document.getElementById("date-year");
 const allSections = document.querySelectorAll(".section");
 const benefitsTabs = document.querySelector(".benefits-tab-container");
 const tabs = document.querySelectorAll(".benefits-tab");
 const benefitsContent = document.querySelectorAll(".benefits-content");
 const submitBtn = document.getElementById("form-submit");
+const learnMoreBtn = document.querySelector(".learn-more");
+const aboutSection = document.getElementById("about");
 
 //----------------Nav side-bar toggle------------------------
 
@@ -29,15 +26,14 @@ navItems.addEventListener("click", function (e) {
 	if (e.target.classList.contains("nav-link")) {
 		const id = e.target.getAttribute("href");
 
-		document.querySelector(id).scrollIntoView({ behavior: "smooth" }),
-			toggleNav();
+		document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+		toggleNav();
 	}
 });
 
-learnMoreBtn.addEventListener("click", (e) => {
-	aboutSection.scrollIntoView({
-		behavior: "smooth",
-	});
+learnMoreBtn.addEventListener("click", function (e) {
+	e.preventDefault();
+	aboutSection.scrollIntoView({ behavior: "smooth" });
 });
 
 //-----------------Reveal Sections on Scroll --------------
@@ -83,16 +79,16 @@ benefitsTabs.addEventListener("click", function (e) {
 //-----------------Contact Form Functionality----------------------
 const form = document.getElementById("contact-form");
 
-const formMessage = function () {
-	form.innerHTML = "";
-	form.innerHTML = `
-	<div>
-	<h2>
-		Message was successfully sent!
-	</h2>
-	</div>
-	`;
-};
+// const formMessage = function () {
+// 	form.innerHTML = "";
+// 	form.innerHTML = `
+// 	<div>
+// 	<h2>
+// 		Message was successfully sent!
+// 	</h2>
+// 	</div>
+// 	`;
+// };
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
