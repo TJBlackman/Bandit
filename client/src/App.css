@@ -44,16 +44,6 @@ header {
 	height: 100vh;
 	position: relative;
 }
-header::before {
-	content: "";
-	background-color: rgba(1, 0, 37, 0.2);
-	position: absolute;
-	opacity: 0.9;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-}
 
 .section {
 	margin-bottom: 90px;
@@ -578,6 +568,50 @@ footer a {
 	height: auto;
 }
 
+/* --------------------------Login Form------------------------------------------------- */
+
+.login-head {
+	position: absolute;
+	font-size: 5rem;
+	margin-top: -100px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.login-form-container {
+	max-width: 500px;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+
+.login-form {
+	display: block;
+	padding-right: 10%;
+}
+
+input {
+	margin: 1.2rem 0;
+}
+
+.login-form label {
+	font-size: 2rem;
+}
+
+.login-form input[type="email"],
+input[type="password"] {
+	display: block;
+	width: 100%;
+	padding: 0.4rem;
+	font-size: 1.2rem;
+	border: 1px solid #ccc;
+}
+
+input[type="submit"],
+button {
+	font: inherit;
+	font-size: 2rem;
+}
+
 /* ------------------------ REVEAL SECTIONS ON SCROLL ---------------------------------- */
 
 .section {
@@ -631,6 +665,13 @@ footer a {
 		grid-template-rows: auto auto;
 		grid-column-gap: 20px;
 		grid-row-gap: 30px;
+	}
+	.login-head {
+		position: absolute;
+		font-size: 4rem;
+		margin-top: -100px;
+		left: 50%;
+		transform: translate(-50%);
 	}
 }
 
@@ -688,7 +729,23 @@ footer a {
 	}
 	form {
 		padding: 0;
-		width: 90vw;
+		width: 90%;
+	}
+
+	.login-form {
+		display: block;
+		padding-right: 0;
+	}
+	.login-head {
+		font-size: 4rem;
+		text-align: center;
+		margin-top: -100px;
+	}
+
+	.login-form-container {
+		margin: 0 auto;
+		margin-top: 100px;
+		width: 90%;
 	}
 }
 
@@ -709,67 +766,6 @@ footer a {
 .btn:hover {
 	transform: scale(1.02);
 	background-color: var(--secondary-color-lighter);
-}
-
-/* Forms */
-.form-container {
-	display: block;
-	max-width: 500px;
-	margin: 2rem auto;
-	overflow: hidden;
-	padding: 0 2rem;
-}
-input {
-	font-size: 1.5rem;
-	border-radius: 7px;
-	padding: 20px;
-	font-family: inherit;
-	margin: 1.2rem 0;
-}
-
-.form-text {
-	display: block;
-	margin-top: 0.3rem;
-	color: #888;
-}
-
-input[type="email"],
-input[type="password"] {
-	display: block;
-	width: 100%;
-	padding: 0.4rem;
-	font-size: 1.5rem;
-	border: 1px solid #ccc;
-}
-
-.form-group {
-	margin: 1.2rem 0;
-}
-
-.form-group input {
-	margin: 0.2rem 0;
-}
-
-label {
-	font-size: 1.5rem;
-	float: left;
-}
-
-.form-container {
-	max-width: 500px;
-	margin: auto;
-	overflow: hidden;
-	padding: 0 2rem;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.form-container h1,
-h2,
-h3 {
-	text-align: center;
 }
 
 @media screen and (max-width: 1024px), screen and (max-height: 700px) {
