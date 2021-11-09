@@ -9,41 +9,41 @@ import Contact from "../layout/Contact";
 import Footer from "../layout/Footer";
 
 const Home = () => {
-	useEffect(() => {
-		const sectionObserver = new IntersectionObserver(
-			(entries, observer) => {
-				const [entry] = entries;
+  useEffect(() => {
+    const sectionObserver = new IntersectionObserver(
+      (entries, observer) => {
+        const [entry] = entries;
 
-				if (!entry.isIntersecting) return;
+        if (!entry.isIntersecting) return;
 
-				entry.target.classList.remove("section-hidden");
+        entry.target.classList.remove("section-hidden");
 
-				//stop observing after loading the whole page
-				observer.unobserve(entry.target);
-			},
-			{
-				root: null,
-				threshold: 0.15,
-			}
-		);
+        //stop observing after loading the whole page
+        observer.unobserve(entry.target);
+      },
+      {
+        root: null,
+        threshold: 0.15,
+      }
+    );
 
-		document.querySelectorAll(".section").forEach(function (section) {
-			sectionObserver.observe(section);
-			section.classList.add("section-hidden");
-		});
-	});
+    document.querySelectorAll(".section").forEach(function (section) {
+      sectionObserver.observe(section);
+      section.classList.add("section-hidden");
+    });
+  });
 
-	return (
-		<Fragment>
-			<Header />
-			<About />
-			<Services />
-			<Benefits />
-			<CoreValues />
-			<Contact />
-			<Footer />
-		</Fragment>
-	);
+  return (
+    <>
+      <Header />
+      <About />
+      <Services />
+      <Benefits />
+      <CoreValues />
+      <Contact />
+      <Footer />
+    </>
+  );
 };
 
 export default Home;
