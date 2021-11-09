@@ -2,8 +2,9 @@ import React, { Fragment, useRef } from "react";
 import PropTypes from "prop-types";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../images/logo.png";
+import { scrollElementIntoView } from "../utils/scroll-to-element";
 
-const Navbar = ({ icon }) => {
+const Navbar = (props) => {
   const navRef = useRef();
   const location = useLocation();
 
@@ -14,7 +15,7 @@ const Navbar = ({ icon }) => {
   const goToSection = (e) => {
     e.preventDefault();
     const id = e.target.getAttribute("href");
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    scrollElementIntoView(id);
     toggleNav();
   };
 
@@ -83,7 +84,7 @@ const Navbar = ({ icon }) => {
           <div className="line line2"></div>
           <div className="line line3"></div>
         </button>
-        {icon}
+        {props.icon}
         {navMenu}
       </nav>
     </Fragment>
